@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test-unit && npm run test-e2e",
     "test-e2e": "cypress open",
     "test-unit": "jest",
     "build": "vite build",
