@@ -1,5 +1,6 @@
 describe('login', () => {
   it('Logs in with valid credentials', () => {
+    cy.visit('/');
     cy.wait(1000);
     cy.get('#registerForm').within(() => {
       cy.get('[data-auth="login"]').click();
@@ -18,6 +19,7 @@ describe('login', () => {
   });
 
   it('Rejects login with invalid credentials', () => {
+    cy.visit('/');
     let alertedText = null;
     cy.on('window:alert', (msg) => (alertedText = msg));
 

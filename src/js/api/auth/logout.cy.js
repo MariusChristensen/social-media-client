@@ -1,5 +1,6 @@
 describe('logout', () => {
   it('Clears session when logout', () => {
+    cy.visit('/');
     cy.wait(1000);
     cy.get('#registerForm').within(() => {
       cy.get('[data-auth="login"]').click();
