@@ -17,3 +17,6 @@ Runs:
 - Testing
   - Jest (Unit testing)
   - Cypress (E2E testing)
+
+- Bundler
+  - Vite
