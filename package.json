@@ -7,8 +7,8 @@
     "test": "npm run test-unit && npm run test-e2e",
     "test-e2e": "cypress open",
     "test-unit": "jest",
-    "build": "sass src/scss:dist/css",
-    "start": "sass --watch src/scss:dist/css & live-server",
+    "build": "vite build",
+    "start": "vite --open",
     "lint": "eslint src/**/*.js index.js",
     "format": "prettier -c src/**/*.js index.js",
     "prepare": "husky install"
@@ -29,7 +29,8 @@
     "lint-staged": "^13.1.0",
     "live-server": "^1.2.2",
     "prettier": "^2.8.3",
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+    "vite": "^4.0.4"
   },
   "dependencies": {
     "bootstrap-dark-5": "^1.1.3"
